@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap & FontAwesome from CDN (mirrors the original static files) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>OSHAcademy Student Training Verification</title>
+
+    <style>
+        /* ── custom.css (verbatim from app.oshacademy-atp.com) ── */
+        .status-under-review { color: #FA4616; }
+        .oshacademy-orange   { color: #FA4616; }
+        .status-hold         { color: red; }
+        .status-approved     { color: green; }
+        .status-prepared, .status-qc, .status-shipped { color: #5F8FB4; }
+        .status-complete     { color: grey; }
+        .nobreak             { white-space: nowrap; }
+
+        .google-translate { float: right; margin-right: 10px; }
+
+        h2 { text-transform: capitalize; }
+
+        .page-header { margin-top: 0; padding-top: 40px; }
+
+        html, body { height: 100%; min-height: 100%; }
+
+        .wrap {
+            min-height: 100%;
+            height: auto;
+            position: relative;
+            margin-bottom: -60px;
+            padding-bottom: 10px;
+        }
+        .push { height: 60px; }
+
+        #footer {
+            width: 100%;
+            border-radius: 0;
+            background-color: #2c3e50;
+        }
+        .footer-content {
+            color: #ffffff;
+            text-align: center;
+            line-height: 60px;
+        }
+        .navbar-link-color { color: #577492 !important; }
+
+        .p-lg  { padding: 20px !important; }
+        .pl-lg { padding-left: 20px !important; }
+        .pb-xlg{ padding-bottom: 30px !important; }
+        .pt-sm { padding-top: 10px !important; }
+
+        /* keep header image centred */
+        .page-header img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                max-width: 8.5in;
+                height: 11in;
+                margin: 0.25in;
+                font-size: 1em;
+                font-family: Arial, Verdana;
+            }
+            .container { margin: 0 !important; padding: 0 !important; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <!-- ── Header Banner ── -->
+    <div class="page-header text-center">
+        <img src="https://app.oshacademy-atp.com/static/images/2015_website_header_final.jpg"
+             alt="OSHAcademy Header">
+    </div>
+
+    <!-- ── Main Container ── -->
+    <div class="container">
+
+        <h1>OSHAcademy Student Training Verification</h1>
+
+        <!-- Instructions row -->
+        <div class="row pb-xlg">
+            <div class="col-xs-12 col-md-7 pull-left">
+                <h3 class="oshacademy-orange">Does your certificate have a "Validation Code"?</h3>
+                <p class="status-complete pl-lg">example: 123-45-789-a1b2c</p>
+                <ul>
+                    <li>
+                        If your certificate does not contain a validation code
+                        (training completed before February 1st, 2017), please
+                        <a href="https://www.oshacademy-atp.com/contact-us.html">verify your training</a> here.<br><br>
+                        <strong>Please include the following information:</strong>
+                    </li>
+                    <ul>
+                        <li>Student name displayed on certificate</li>
+                        <li>Student number</li>
+                        <li>Title of training course or program</li>
+                        <li>Certificate Issue Date</li>
+                    </ul>
+                    <li class="pt-sm">
+                        If your certificate does have a validation code
+                        (training completed after February 1st, 2017), please enter the
+                        code in the form below.
+                    </li>
+                </ul>
+                <h3 class="oshacademy-orange">Questions?</h3>
+                <p class="pl-lg">Please contact our office at support@oshacademy-atp.com or call +1 (971) 217-8721</p>
+            </div>
+            <div class="col-xs-12 col-md-4 col-md-offset-1 pull-left">
+                <img class="img-thumbnail"
+                     src="https://app.oshacademy-atp.com/static/images/validation_code.png"
+                     alt="Validation Code Example">
+            </div>
+        </div>
+
+        <!-- ── Validation Status ── -->
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+                <h2>Validation Status</h2>
+
+                <p><strong>Please verify the information below matches the information on the
+                certificate being validated.</strong></p>
+
+                <p>A certificate is only valid if the information matches the information provided below.</p>
+
+                <p>If you have any questions or concerns, please contact OSHAcademy at
+                <a href="mailto:support@oshacademy-atp.com">support@oshacademy-atp.com</a>
+                or call our office at +1 (971) 217-8721.</p>
+
+                <!-- Details well -->
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="well">
+                            <dl class="row">
+                                <dt class="col-md-3">Student</dt>
+                                <dd class="col-md-9">Tariq Awdah Alhwaiti</dd>
+
+                                <dt class="col-md-3">ATP</dt>
+                                <dd class="col-md-9">SG Fast Track</dd>
+
+                                <dt class="col-md-3">Program</dt>
+                                <dd class="col-md-9">30-hour General Industry Safety and Health</dd>
+
+                                <dt class="col-md-3">Completion Date</dt>
+                                <dd class="col-md-9">08-08-2024</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Valid alert -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="alert alert-success">
+                            Verification Code is Valid
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verification form -->
+        <div class="row">
+            <div class="col-md-8">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="code">Verification Code</label>
+                        <input id="code" class="form-control" name="code"
+                               placeholder="123-45-789-a1b2c"
+                               value="248168-201-352-1501b">
+                        <button class="input-btn btn btn-primary" type="submit">Verify</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Survey -->
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+                <h3 class="oshacademy-orange">Student Survey</h3>
+                <p><strong>We need your help!</strong></p>
+                <p>This survey is an opportunity for you to share
+                your experience, and have your voice heard.</p>
+                <p>We understand your busy. This survey should only take about
+                2 minutes to complete. The information that you share with us is always kept
+                confidential, and will only be used to help shape the future of OSHAcademy ATP Training.</p>
+                <p>We greatly appreciate your participation and value your input.</p>
+                <p><b><a href="//oshacademy-atp.com/feedback.html" target="_blank">Click here to begin the survey</a>.</b></p>
+                <p>Thanks so much!<br>
+                <em>OSHAcademy</em></p>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+
+    <div class="pb-xlg"></div>
+    <div class="push"></div>
+</div><!-- /.wrap -->
+
+<!-- ── Footer ── -->
+<div id="footer">
+    <div class="footer-content hidden-print">
+        <span class="glyphicon glyphicon-copyright-mark"></span>
+        Copyright 2026 OSHAcademy Safety and Health Training. All Rights Reserved. |
+        <a href="#" class="navbar-link navbar-link-color">Website Terms of Use Agreement</a>
+    </div>
+</div>
+
+</body>
+</html>
