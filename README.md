@@ -4,4 +4,4 @@ Static website files for GitHub Pages.
 
 - `index.html` is the site homepage.
 - `qr.html` displays the QR code.
-- `site-qr.svg` and `site-qr.png` point to the GitHub Pages URL.
+- `site-qr.svg` and `site-qr.png` point to https://sbstr.github.io/oshacademy/.

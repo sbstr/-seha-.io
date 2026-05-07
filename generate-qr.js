@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const targetUrl = "https://sbstr.github.io/-seha-.io/";
+const targetUrl = "https://sbstr.github.io/oshacademy/";
 const version = 5;
 const size = version * 4 + 17;
 const dataCodewords = 108;
